@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Movie Database</title>
+        <meta name="description" content="The greatest internet movie database.">
+        <link rel="stylesheet" href="layout.css" id="mainCss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+        <div class="navbar">
+            <div class="navbar-left">
+                <a href="movieDB.html">MOVIE DB</a>
+                <div class="dropdown">
+                News
+                    <div class="dropdown-content">
+                    <a href="#">Movies</a>
+                    <a href="#">TV</a>
+                    <a href="#">Celebrities</a>
+                    <a href="#">Box office</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                Movies
+                    <div class="dropdown-content">
+                    <a href="#">Top rated</a>
+                    <a href="#">Latest releases</a>
+                    <a href="#">Coming soon</a>
+                    <a href="#">Trailers</a>
+                    <a href="#">Awards</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                Series
+                    <div class="dropdown-content">
+                    <a href="#">Top rated</a>
+                    <a href="#">Latest releases</a>
+                    <a href="#">Coming soon</a>
+                    <a href="#">Trailers</a>
+                    <a href="#">Awards</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                Actors
+                    <div class="dropdown-content">
+                    <a href="#">Top rated</a>
+                    <a href="#">Most popular</a>
+                    <a href="#">Photos</a>
+                    <a href="#">Awards</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                Community
+                    <div class="dropdown-content">
+                    <a href="#">Events</a>
+                    <a href="#">Quizes</a>
+                    <a href="#">Polls</a>
+                    <a href="#">Forum</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-right">
+            <a href="#">Login</a>
+            </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="search-form">
+                <form name="movieForm" method="get">
+                <input type="text" name="movieTitle" size="50px" placeholder="Find movie">
+                <input type="submit" name="submit" value="Search">
+                </form>
+                <div id="noResult"></div>
+            </div>
+            <div id="loader"></div>
+            <div id="searchResult" class="search-result">
+            </div>
+            <div id="nextResultLoader"></div>
+        </div>
+        <div class="footer">
+            <div class="footer-item">Home</div>
+            <div class="footer-item">Jobs</div>
+            <div class="footer-item">Contact us</div>
+            <div class="footer-item">Privacy Policy</div>
+            <div class="footer-item">Help</div>
+        </div>
+        <div id="modal-container">
+            <div id="detailsLoader"></div>
+            <div id="modal">
+            </div>
+        </div>
+        <script src="myScript2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>
+</html>
